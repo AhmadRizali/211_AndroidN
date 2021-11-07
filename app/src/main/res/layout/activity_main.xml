@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:paddingLeft="20dp"
+    android:paddingStart="20dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contoh Input Text dan Button"
+        android:text="@string/contoh_input_text_dan_button"
         android:textSize="24sp"
         android:textColor="@color/purple_500"
         android:layout_marginBottom="16dp"
@@ -23,49 +22,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Isi Nama"
+        android:hint="@string/isi_nama"
         android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:autofillHints="name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Isi Email"
+        android:hint="@string/isi_email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:autofillHints="emailAddress" />
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="phone"
         android:ems="10"
-        android:hint="Isi Nomer HP"
+        android:hint="@string/isi_nomer_hp"
+        android:hintTextColor="#757575"
         android:inputType="phone"
-        android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Isi Tanggal"
+        android:hint="@string/isi_tanggal"
         android:inputType="date"
         android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:autofillHints="creditCardExpirationDate" />
 
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Isi Angka"
+        android:hint="@string/isi_angka"
         android:inputType="number"
         android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:autofillHints="creditCardNumber" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -73,19 +79,23 @@
         android:orientation="horizontal"
         android:layout_gravity="right"
         >
+
         <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Simpan"
+            android:layout_marginEnd="8dp"
             android:backgroundTint="@color/sukses"
-            android:layout_marginEnd="8dp"/>
+            android:text="@string/simpan"
+            android:textColor="#4A148C" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Batal"
+            android:text="@string/batal"
             android:backgroundTint="@color/danger"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="8dp"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
 </LinearLayout>
