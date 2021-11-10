@@ -82,6 +82,7 @@
 
         <Button
             style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/simpanButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -90,6 +91,7 @@
             android:textColor="#4A148C" />
 
         <Button
+            android:id="@+id/batalButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/batal"
