@@ -47,7 +47,6 @@
         android:autofillHints="phone"
         android:ems="10"
         android:hint="@string/isi_nomer_hp"
-        android:hintTextColor="#757575"
         android:inputType="phone"
         android:minHeight="48dp" />
 
@@ -88,7 +87,8 @@
             android:layout_marginEnd="8dp"
             android:backgroundTint="@color/sukses"
             android:text="@string/simpan"
-            android:textColor="#4A148C" />
+            android:textColor="#4A148C"
+            android:drawableLeft="@drawable/ic_baseline_save_24"/>
 
         <Button
             android:id="@+id/batalButton"
@@ -97,6 +97,7 @@
             android:text="@string/batal"
             android:backgroundTint="@color/danger"
             android:layout_marginEnd="8dp"
+            android:drawableLeft="@drawable/ic_baseline_cancel_24"
             style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
