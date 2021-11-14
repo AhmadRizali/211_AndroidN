@@ -24,22 +24,23 @@ class LoginActivity : AppCompatActivity() {
             val usernameInput = usernameEditText.text.toString()
             val passwordInput = passwordEditText.text.toString()
 
-            if(usernameInput == username && passwordInput == password){
-                val sharedPref = this.getSharedPreferences("MY_SHARED_PREFERENCES",MODE_PRIVATE)
+            if (usernameInput == username && passwordInput == password) {
+                val sharedPref = this.getSharedPreferences("MY_SHARED_PREFERENCES", MODE_PRIVATE)
                 with(sharedPref.edit()) {
                     putString("username", usernameInput)
                     putString("password", passwordInput)
                     apply()
                 }
 
-                val intent = Intent(this,MainActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this,"Username/Password tidak sesuai",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Username/Password tidak sesuai", Toast.LENGTH_SHORT).show()
             }
         }
 
         keluarButton.setOnClickListener {
             finish()
+        }
     }
 }
