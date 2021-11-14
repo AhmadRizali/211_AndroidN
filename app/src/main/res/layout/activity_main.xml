@@ -40,18 +40,18 @@
         android:autofillHints="emailAddress" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:autofillHints="phone"
+        android:autofillHints="@string/isi_nomor_hp"
         android:ems="10"
         android:hint="@string/isi_nomer_hp"
         android:inputType="phone"
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/dateEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -62,7 +62,7 @@
         android:autofillHints="creditCardExpirationDate" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/numberEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

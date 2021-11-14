@@ -17,10 +17,10 @@ class  MainActivity : AppCompatActivity() {
         val batalButton = findViewById<Button>(R.id.batalButton)
 
         val namaEditText = findViewById<EditText>(R.id.namaEditText)
-        val phoneEditText = findViewById<EditText>(R.id.editTextPhone)
+        val phoneEditText = findViewById<EditText>(R.id.phoneEditText)
         val emailEditText = findViewById<EditText>(R.id.emailEditText)
-        val dateEditText = findViewById<EditText>(R.id.editTextDate)
-        val numberEditText = findViewById<EditText>(R.id.editTextNumber)
+        val dateEditText = findViewById<EditText>(R.id.dateEditText)
+        val numberEditText = findViewById<EditText>(R.id.numberEditText)
 
 
         simpanButton.setOnClickListener {
